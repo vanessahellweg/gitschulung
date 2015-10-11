@@ -31,7 +31,7 @@ app.configure(function() {
 
 app.get("/", function(req, res) {
 	res.writeHead(200, {'Content-Type': 'text/html'});
-	fs.createReadStream(opts.baseDir + '/index.html').pipe(res);
+	fs.createReadStream(opts.baseDir + '/index.html~2015-10-11').pipe(res);
 });
 
 app.get("/token", function(req,res) {
